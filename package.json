@@ -28,7 +28,6 @@
     "expiration"
   ],
   "dependencies": {
-    "@hono/node-server": "^1.12.1",
     "hono": "^4.5.8"
   },
   "devDependencies": {
