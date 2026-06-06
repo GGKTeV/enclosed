@@ -32,4 +32,18 @@ function run(args) {
 
 run(['--filter', '@enclosed/crypto', 'run', 'build']);
 run(['--filter', '@enclosed/lib', 'run', 'build']);
+run([
+  '--filter',
+  '@enclosed/app-server',
+  'exec',
+  'esbuild',
+  '../../scripts/vercel-function.ts',
+  '--bundle',
+  '--platform=node',
+  '--target=node22',
+  '--format=cjs',
+  '--outfile=../../api/[...].js',
+  '--footer:js=module.exports = module.exports.default;',
+  '--log-level=warning',
+]);
 run(['--filter', '@enclosed/app-client', 'run', 'build']);
