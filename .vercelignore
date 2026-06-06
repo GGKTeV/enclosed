@@ -1,0 +1,7 @@
+node_modules
+.data
+.vercel
+work
+outputs
+packages/*/dist
+packages/app-server/dist-node

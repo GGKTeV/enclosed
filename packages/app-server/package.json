@@ -31,6 +31,7 @@
     "@corentinth/chisels": "catalog:",
     "@enclosed/lib": "workspace:*",
     "@hono/node-server": "^1.12.1",
+    "@upstash/redis": "^1.38.0",
     "bcryptjs": "^2.4.3",
     "date-fns": "^4.0.0",
     "figue": "^2.1.0",
